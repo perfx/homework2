@@ -1,0 +1,140 @@
+@import "suitcss-base";
+ 
+@import "suitcss-utils-align";
+@import "suitcss-utils-layout";
+@import "suitcss-utils-text";
+@import "suitcss-utils-flex";
+@import "suitcss-components-button";
+
+/* OTHER POSSIBLE IMPORTS */
+/* Import only what you need */
+
+/* @import "suitcss-utils-display"; */
+/* @import "suitcss-utils-link"; */
+/* @import "suitcss-utils-offset"; */
+/* @import "suitcss-utils-position"; */
+/* @import "suitcss-utils-size"; */
+ 
+/* @import "suitcss-components-arrange"; */
+/* @import "suitcss-components-flex-embed"; */
+/* @import "suitcss-components-grid"; */
+ 
+/* @custom-media --sm-viewport (min-width: 320px);
+@custom-media --md-viewport (min-width: 640px);
+@custom-media --lg-viewport (min-width: 960px); */
+
+:root {
+  /* Typography
+  *******************************/
+  --body-font: 'Roboto', sans-serif;
+  --font-md: 1rem;
+  --font-sm: 0.8rem;
+
+  /* Colors
+  *******************************/
+  /* White */
+  --white: #FFFFFF;
+
+  /* Gray */
+  --gray: #F7FAFC;
+  --dark-gray: #333333;
+
+  /* Red */
+  --red: #F24011;
+
+  /* Green */
+  --green: #14872C;
+
+  /* Blue */
+  --blue: #1E70A1;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: var(--font-md);
+  color: var(--dark-gray);
+  padding: 1rem;
+}
+
+ /* COMPONENTS */
+ :root {
+   --NotificationCard-max-width: 56rem;
+   --NotificationCard-border-radius: 5px;
+   --NotificationCard-box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+   --NotificationCard-padding: 0.5rem 1rem;
+   --NotificationCard-margin: 1rem 0;
+   --NotificationCard-errorColor: var(--red-700);
+   --NotificationCard-successColor: var(--green-500); 
+ }
+
+ /* Notifications */
+ .NotificationCard {
+   max-width: var(--NotificationCard-max-width);
+   width: 100%;
+   background-color: var(--white);
+   margin: var(--NotificationCard-margin);
+   padding: var(--NotificationCard-padding);
+   box-shadow: var(--NotificationCard-box-shadow);
+   border-radius: var(--NotificationCard-border-radius);
+ }
+
+ .NotificationCard--error {
+   border: 2px solid var(--red);
+   border-right-width: 60px;
+ }
+
+ .NotificationCard--success {
+   border: 2px solid var(--green);
+   border-right-width: 60px;
+ }
+
+ .NotificationCard-title {
+   font-weight: bold;
+ }
+
+ .NotificationCard > p {
+   margin: 1rem 0;
+   letter-spacing: 0.3px;
+ }
+
+
+ /* Button */
+:root {
+  --Button-padding: 1rem 0.7rem;
+  --Button-border-radius: 5px;
+  --Button-box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.Button {
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: var(--Button-border-radius);
+  box-shadow: var(--Button-box-shadow);
+  text-transform: uppercase;
+}
+
+.Button--blue {
+  border-color: var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+ /* UTILITIES */
+ .u-heightScreen {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+ }
+
+ .u-bgGray100 {
+   background-color: var(--gray);
+ }
+
+ .u-link {
+   color: var(--blue);
+   text-decoration: none;
+ }
+
+ .u-link:hover {
+   color: darken(var(--blue), 90); 
+ }

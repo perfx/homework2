@@ -1,0 +1,17 @@
+{
+  "name": "nfq-hw2",
+  "version": "1.0.0",
+  "description": "Nfq akademija: Homework 2",
+  "main": "index.js",
+  "scripts": {
+    "suitcss": "suitcss index.css css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "suitcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "suitcss-preprocessor": "^4.0.0"
+  }
+}
