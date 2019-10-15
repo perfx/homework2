@@ -12,3 +12,13 @@
 ## Atlikimas
 
 Nusprendžiau užduotį atlikti naudojant patį suitcss framework. Pati metodika yra tokia pat kaip BEM, skiriasi tik komponentų vardinimo sistema. BEM naudoja `-` atskirti žodžius, jei elementą sudaro daugiau nei vienas žodis, kol suitcss naudoja PascalCase.
+
+---
+
+## Naudojimas
+
+Įsitikinkite, kad kompiuteryje yra instaliuota NodeJS
+
+ 1. `git clone https://github.com/EvaldasBurlingis/homework2.git`
+ 2. `cd homework2`
+ 3. `npm install`
